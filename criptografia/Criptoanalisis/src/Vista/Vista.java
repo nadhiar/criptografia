@@ -190,21 +190,16 @@ public class Vista extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel1))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabel1))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel2)))))
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabel2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
@@ -313,7 +308,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        tipocifrador.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Shift", "Affine", "Vigenere", "Sustitucion", "Hill", "Permutacion" }));
+        tipocifrador.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Shift", "Affine", "Vigenere", "Sustitucion", "Hill", "Permutacion", "SPN", "SDES" }));
         tipocifrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tipocifradorActionPerformed(evt);
@@ -1243,6 +1238,35 @@ public class Vista extends javax.swing.JFrame {
                 KeyMcombo.setVisible(true);
 
                 break;
+
+            case 6:
+                hillPanel.setVisible(false);
+
+
+                key.setVisible(true);
+                hillk.setVisible(false);
+                keyb.setVisible(false);
+                afinb.setVisible(false);
+                MHill.setVisible(false);
+                KeyMcombo.setVisible(false);
+
+                break;
+
+            case 7:
+
+                hillPanel.setVisible(false);
+
+
+                key.setVisible(true);
+                hillk.setVisible(false);
+                keyb.setVisible(false);
+                afinb.setVisible(false);
+                MHill.setVisible(false);
+                KeyMcombo.setVisible(false);
+                
+                break;
+
+
 
         }
 
