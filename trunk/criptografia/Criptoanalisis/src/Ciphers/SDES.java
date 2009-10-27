@@ -28,8 +28,16 @@ public class SDES {
     int IPinv [] = {3,0,2,4,6,1,7,5};
     int EP []= {3,0,1,2,1,2,3,0};
     int P4 []={1,3,2,0};
-    int S0 [][]={};
-    int S1 [][]={};
+    //String S0 [10][10] = new String []();
+    /*String S0 [][]= {"S0","00","01","10","11";"00","01","00","11","10"};
+
+
+    "00","01","00","11","10";
+    "01","11","10","01","00";
+    "10","00","10","01","11";
+    "11","11","01","11","10"};*/
+    String S1 [][]={};
+
     String m;
     char texto [];
     public SDES (String unTexto){
@@ -129,6 +137,7 @@ public class SDES {
         EP1=permutar8(R,EP);
         L1=dividirIzq(EP1);
         R1=dividirDer(EP1);
+        
         
 
 
